@@ -9,9 +9,27 @@
     <name>android</name>
 
     <properties>
-        <platform.version> 2.3.3
-            </platform.version>
+        <platform.version>2.3.3</platform.version>
     </properties>
+    
+    <repositories>
+	    <repository>
+		    <id>springsource-repo</id>
+		    <name>SpringSource Repository</name>
+		    <url>http://repo.springsource.org/release</url>
+		</repository>
+		<repository>
+		     <id>org.springframework.maven.snapshot</id>
+		     <name>Spring Maven Snapshot Repository</name>
+		     <url>http://maven.springframework.org/snapshot</url>
+	          <releases>
+	               <enabled>false</enabled>
+	          </releases>
+	          <snapshots>
+	               <enabled>true</enabled>
+	          </snapshots>
+		</repository>
+	</repositories>
 
     <dependencies>
         <dependency>
@@ -19,6 +37,17 @@
             <artifactId>android</artifactId>
             <version>${platform.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+		    <groupId>org.springframework.android</groupId>
+		    <artifactId>spring-android-rest-template</artifactId>
+		    <version>1.0.0.RELEASE</version>
+		</dependency>
+		<dependency>
+             <groupId>com.google.android</groupId>
+             <artifactId>android</artifactId>
+             <version>2.2.1</version>
+             <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -34,9 +63,12 @@
                     <resourceDirectory>${project.basedir}/res</resourceDirectory>
                     <nativeLibrariesDirectory>${project.basedir}/src/main/native</nativeLibrariesDirectory>
                     <sdk>
-                        <platform>10</platform>
+                        <platform>8</platform>
+                        <emulator>
+                             <avd>ADV_41</avd>
+                        </emulator>
                     </sdk>
-                                        <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                    <undeployBeforeDeploy>true</undeployBeforeDeploy>
                 </configuration>
                 <extensions>true</extensions>
             </plugin>
