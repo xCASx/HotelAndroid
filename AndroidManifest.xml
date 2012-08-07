@@ -10,6 +10,9 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:name="LoggedInActivity"></activity>
+    <activity android:name="ServiceListActivity"></activity>
+    <activity android:name="NewServiceActivity"></activity>
   </application>
 </manifest>
 

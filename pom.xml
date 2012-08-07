@@ -10,6 +10,7 @@
 
     <properties>
         <platform.version>2.3.3</platform.version>
+        <adv.version>ADV_41</adv.version>
     </properties>
     
     <repositories>
@@ -32,6 +33,14 @@
 	</repositories>
 
     <dependencies>
+        <!--  Gson: Java to Json conversion -->
+	    <dependency>
+	      <groupId>com.google.code.gson</groupId>
+	      <artifactId>gson</artifactId>
+	      <version>2.2.2</version>
+	      <scope>compile</scope>
+	    </dependency>
+        
         <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>android</artifactId>
@@ -65,7 +74,7 @@
                     <sdk>
                         <platform>8</platform>
                         <emulator>
-                             <avd>ADV_41</avd>
+                             <avd>${adv.version}</avd>
                         </emulator>
                     </sdk>
                     <undeployBeforeDeploy>true</undeployBeforeDeploy>

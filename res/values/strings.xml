@@ -2,4 +2,14 @@
 <resources>
     <string name="hello">Hello android!</string>
     <string name="app_name">android</string>
+    
+    <string-array name="spinnerValues">
+        <item>[To choose later]</item>
+        <item>Technicist</item>
+        <item>Cleaner</item>
+    </string-array>
+    <string name="hotelStr">Hotel</string>
+    <string name="passwdStr">Password:</string>
+    <string name="loginStr">Login:</string>
+    <string name="loginBtnStr">Enter</string>
 </resources>
