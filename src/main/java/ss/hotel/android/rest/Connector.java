@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 public class Connector {
 	private static final int port = 8080;
-	private static final String ip = "192.168.238.134";
+	private static final String ip = "192.168.107.129";
 	
 	public static String send(String query) {
 		String resp;

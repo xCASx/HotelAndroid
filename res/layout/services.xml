@@ -7,7 +7,8 @@
     
 	<TextView android:id="@+id/serviceslist"
 	    android:layout_width="fill_parent" 
-		android:layout_height="wrap_content"/>
+		android:layout_height="wrap_content"
+		android:text="Choose service:"/>
 	
 	<ListView
 	    android:id="@android:id/list"

@@ -5,9 +5,10 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 	
-	<TextView android:id="@+id/itemslist"
+	<TextView android:id="@+id/roomslist"
 	    android:layout_width="fill_parent" 
-		android:layout_height="wrap_content"/>
+		android:layout_height="wrap_content"
+		android:text="Choose room"/>
 
 	<ListView
 	    android:id="@android:id/list"

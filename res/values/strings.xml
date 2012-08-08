@@ -4,9 +4,13 @@
     <string name="app_name">android</string>
     
     <string-array name="spinnerValues">
-        <item>[To choose later]</item>
         <item>Technicist</item>
         <item>Cleaner</item>
+    </string-array>
+    <string-array name="spinnerWhoPays">
+        <item>[To choose later]</item>
+        <item>Client</item>
+        <item>Hotel</item>
     </string-array>
     <string name="hotelStr">Hotel</string>
     <string name="passwdStr">Password:</string>

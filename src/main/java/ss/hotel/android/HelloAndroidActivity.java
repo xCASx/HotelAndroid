@@ -50,7 +50,7 @@ public class HelloAndroidActivity extends Activity implements OnClickListener {
         		String pass = passwdTxt.getText().toString();
         		
         		// Check login/pass
-        		String resp = Connector.send("/hotel07/api/login/" + login + "/" + pass);
+        		String resp = Connector.send("/hotel07/api/login?login=" + login + "&pass=" + pass);
         		
         		if(resp.equals("false")) {
         			// Incorrect login
@@ -70,8 +70,8 @@ public class HelloAndroidActivity extends Activity implements OnClickListener {
         			
         			if(correctRole) {
 		        		// Go to the next activity
-		        		Intent intent = new Intent(this, LoggedInActivity.class);
-		        		startActivity(intent);
+        				goNextActivity();
+        				
 	        		} else {
 	        			loginTxt.setText("");
 	        			passwdTxt.setText("");
@@ -85,6 +85,17 @@ public class HelloAndroidActivity extends Activity implements OnClickListener {
 	        	break;
 	        }
         }
+    }
+    
+    private void goNextActivity() {
+    	String role = usr.getRole().getName();
+		if (String.valueOf(Roles.ROLE_CLEANER).equals(role)) {
+    		Intent intent = new Intent(this, RoomListActivity.class);
+    		startActivity(intent);
+		} else if (String.valueOf(Roles.ROLE_TECHNICIST).equals(role)) {
+			Intent intent = new Intent(this, TaskListActivity.class);
+    		startActivity(intent);
+		}
     }
 }
 
