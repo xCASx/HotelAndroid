@@ -14,8 +14,6 @@ public class AddServiceHistory implements Serializable{
 
     private double amount;
 
-    private double datePrice;
-
     private Date operationDate;
 
     private Boolean ClientPaid;
@@ -53,14 +51,6 @@ public class AddServiceHistory implements Serializable{
 
     public void setAmount(double amount) {
         this.amount = amount;
-    }
-
-    public double getDatePrice() {
-        return datePrice;
-    }
-
-    public void setDatePrice(double datePrice) {
-        this.datePrice = datePrice;
     }
 
     public Long getId() {

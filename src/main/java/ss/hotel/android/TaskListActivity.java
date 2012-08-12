@@ -44,8 +44,8 @@ public class TaskListActivity extends ListActivity {
     protected void onListItemClick(ListView l, View v, int position, long id) {
     	item = items.get(position);
         
-    	Intent intent = new Intent(this, WhoPaysActivity.class);
-		startActivity(intent);
+//    	Intent intent = new Intent(this, WhoPaysActivity.class);
+//		startActivity(intent);
 		// TODO process item
     }
 }

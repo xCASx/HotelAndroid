@@ -81,7 +81,6 @@ public class NewServiceActivity extends Activity implements OnClickListener, OnI
 		addServiceHistory.setAddService(ServiceListActivity.service);
 		addServiceHistory.setAmount(amt);
 		addServiceHistory.setClientPaid(clientPaid);
-		addServiceHistory.setDatePrice(ServiceListActivity.service.getPrice());
 		addServiceHistory.setId(null);
 		addServiceHistory.setOpperationDate(new Date());
 		addServiceHistory.setOrder(ho);
